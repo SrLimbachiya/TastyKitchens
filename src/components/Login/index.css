@@ -1,0 +1,186 @@
+.app-login {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+.website-name {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #f7931e;
+}
+
+.login-sidebar {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.login-form-container {
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  position: absolute;
+  width: 456px;
+  height: 523px;
+  background: #fefeff;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.login-form h1 {
+  font-family: DM Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/*========== WEBSITE LOGO =========*/
+
+.website-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.web-logo {
+  height: 65px;
+  width: 65px;
+  margin-bottom: -20px;
+}
+
+/*========== Login Form =========*/
+
+.login-form-ele {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+}
+
+.login-inputs {
+  height: 40px;
+  background: #e2e8f0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.login-labels {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.login-btn {
+  background: #f7931e;
+  border-radius: 8px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-error {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.web-login-sm {
+  position: relative;
+  top: -30px;
+  right: -35px;
+  display: none;
+}
+
+/*==== Small Device ===*/
+
+@media (max-width: 768px) {
+  .login-sidebar {
+    display: none;
+  }
+
+  .app-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .website-logo {
+    display: none;
+  }
+
+  .web-login-sm {
+    display: unset;
+    height: 450px;
+    width: 100%;
+  }
+
+  .login-form {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .login-form h1 {
+    text-align: left;
+    margin: 0;
+    margin-top: -20px;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .login-form-ele {
+    width: 100%;
+  }
+
+  .login-inputs {
+    height: 55px;
+  }
+
+  .login-labels {
+    font-size: 15px;
+  }
+
+  .login-btn {
+    height: 60px;
+    margin-top: 35px;
+    font-size: 18px;
+  }
+}

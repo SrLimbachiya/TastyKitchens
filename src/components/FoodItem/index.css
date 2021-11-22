@@ -1,0 +1,95 @@
+.food-img {
+  height: 160px;
+  width: 255px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.food-item-main {
+  width: 500px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.food-name {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #334155;
+}
+
+.food-cost {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.food-add-btn {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffa412;
+  border: #ffa412 2px solid;
+  background-color: transparent;
+  border-radius: 3px;
+  height: 28px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.qtyadder {
+  display: flex;
+  width: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-qty {
+  font-size: 18px;
+  margin-top: -2px;
+}
+
+.qtyadder button {
+  height: 22px;
+  width: 22px;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.food-name-rating-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80%;
+}
+
+.rupee {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .food-img {
+    height: 130px;
+    width: 180px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+}

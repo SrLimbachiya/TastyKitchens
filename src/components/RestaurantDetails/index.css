@@ -1,0 +1,178 @@
+.restr-name-banner {
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+  background-image: url('https://res.cloudinary.com/srlimbachiya/image/upload/v1635663094/KitchensApp/Frame_279_gqzzqz.png');
+  background-size: 1540px;
+  display: flex;
+  align-items: center;
+  padding: 0 170px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .restr-name-banner {
+    height: 280px;
+    padding: 0;
+  }
+}
+
+.banner-img {
+  height: 250px;
+  width: 400px;
+  border-radius: 15px;
+}
+
+.rating-star-text {
+  display: flex;
+  flex-direction: column;
+}
+.res-detail-rating-text {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.res-detail-name {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  width: 220px;
+}
+
+.res-detail-cuisine,
+.res-detail-location {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.vertical-line {
+  width: 0px; /* Use only border style */
+  height: 40px;
+  float: center;
+  border: 1px inset; /* This is default border style for <hr> tag */
+}
+
+.res-detail-review-count {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #e2e8f0;
+}
+
+.res-detail-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.rating-cost-review {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.res-details-cost-text {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #e2e8f0;
+}
+
+.res-detail-cost-num {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.res-details-main {
+  margin-left: 25px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .res-details-main {
+    height: 350px;
+    width: 100%;
+    width: 220px;
+    margin-left: 42%;
+  }
+}
+
+/*=========== Food Item Container =========*/
+
+.food-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 170px;
+}
+
+.rest-spinner-loader {
+  height: 650px;
+}
+
+@media (max-width: 768px) {
+  .banner-img {
+    height: 250px;
+    width: 180px;
+    position: absolute;
+    border-radius: 0px;
+    left: -5px;
+    top: 140px;
+    clip-path: ellipse(64% 58% at 27% 39%);
+    margin-right: -10px;
+  }
+
+  .food-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 20px;
+  }
+  .res-detail-name {
+    font-size: 22px;
+    word-wrap: normal;
+  }
+  .res-detail-cuisine,
+  .res-detail-location {
+    font-size: 12px;
+    word-wrap: normal;
+  }
+
+  .res-details-main {
+    height: 80%;
+    justify-content: space-between;
+  }
+}
