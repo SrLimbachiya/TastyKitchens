@@ -5,7 +5,12 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 class Login extends Component {
-  state = {showErr: false, username: '', password: '', errorMsg: ''}
+  state = {
+    username: 'rahul',
+    password: 'rahul@2021',
+    showError: false,
+    errorMsg: '',
+  }
 
   onLogin = async event => {
     event.preventDefault()
@@ -46,7 +51,7 @@ class Login extends Component {
   }
 
   render() {
-    const {showErr, errorMsg} = this.state
+    const {showErr, errorMsg, username, password} = this.state
     const gotCookie = Cookies.get('jwt_token')
     if (gotCookie !== undefined) {
       return <Redirect to="/" />
@@ -80,6 +85,7 @@ class Login extends Component {
                 id="usernameInput"
                 className="login-inputs"
                 type="text"
+                value={username}
               />
               <label className="login-labels" htmlFor="passwordInput">
                 PASSWORD
@@ -89,6 +95,7 @@ class Login extends Component {
                 id="passwordInput"
                 className="login-inputs"
                 type="password"
+                value={password}
               />
               {showErr ? <p className="login-error">{errorMsg}</p> : null}
               <button
